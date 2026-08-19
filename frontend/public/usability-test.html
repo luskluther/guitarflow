@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuitarFlow Beginner Validation</title>
+    <link rel="stylesheet" href="/usability-test.css" />
+  </head>
+  <body>
+    <main class="test-shell">
+      <header class="test-header">
+        <div>
+          <span class="eyebrow">ENGINEERING GRAPH 2.0 · HUMAN GATE · PROTOCOL 2.0.3</span>
+          <h1>Optional beginner validation</h1>
+          <p>The personal-use release is owner accepted. This optional study can add independent evidence later.</p>
+        </div>
+        <div class="score-badge" id="score-badge"><b>0</b><span>/ 5 optional sessions</span></div>
+      </header>
+
+      <section class="panel" id="dashboard">
+        <div class="dashboard-grid">
+          <article><span>H1 / C4 comprehension</span><strong id="comprehension-score">Pending</strong><small>4/5 correct; cohort median ≤1.0s</small></article>
+          <article><span>S3 task success</span><strong id="task-score">Pending</strong><small>≥80% unassisted; no P0/P1</small></article>
+          <article><span>Personal-use release</span><strong class="pass" id="graph-score">70/70</strong><small>Owner accepted · optional external confirmation</small></article>
+        </div>
+        <div class="dashboard-actions">
+          <button class="primary" id="new-session" type="button">Start optional participant</button>
+          <button id="export-results" type="button" disabled>Export evidence JSON</button>
+          <button class="danger" id="reset-results" type="button" disabled>Reset local results</button>
+        </div>
+        <div class="session-list" id="session-list"><p>No participant records yet.</p></div>
+      </section>
+
+      <section class="panel hidden" id="session">
+        <div class="step-head"><span id="participant-label">P1</span><div class="step-track" id="step-track"></div><button id="exit-session" type="button">Exit session</button></div>
+
+        <div class="stage" id="consent-stage">
+          <span class="eyebrow">ELIGIBILITY</span>
+          <h2>Before beginning</h2>
+          <p>This test records anonymous answers, response times, task outcomes, and evaluator notes in local browser storage. Do not enter a name or email.</p>
+          <label>Guitar experience
+            <select id="experience">
+              <option value="">Select one</option>
+              <option value="new">New player · under 6 months</option>
+              <option value="beginner">Beginner · 6–24 months</option>
+              <option value="experienced">Experienced · over 24 months</option>
+            </select>
+          </label>
+          <label>Participant language
+            <select id="participant-language">
+              <option value="en-simple">Simple English</option>
+              <option value="hi">हिन्दी (Hindi)</option>
+            </select>
+            <small>Only participant-facing instructions change. Chords, actions, tasks, timing, and scoring stay identical.</small>
+          </label>
+          <label class="check"><input id="unfamiliar" type="checkbox" /> I have not previously used or reviewed this GuitarFlow screen.</label>
+          <label class="check"><input id="consent" type="checkbox" /> I agree to this anonymous usability observation.</label>
+          <div class="callout">Only “New player” and “Beginner” sessions count toward the graph gate. Familiar or experienced sessions can be exported but are marked ineligible.</div>
+          <button class="primary" id="begin-orientation" type="button" disabled>Begin orientation</button>
+        </div>
+
+        <div class="stage hidden" id="orientation-stage">
+          <span class="eyebrow">20-SECOND ORIENTATION</span>
+          <h2 id="orientation-heading">What to look for</h2>
+          <p id="orientation-intro">You will see the practice screen for five seconds. Find these five things:</p>
+          <div class="orientation-cues" id="orientation-cues"></div>
+          <p id="orientation-detail">Look at these five items for 20 seconds. Then the practice screen appears for five seconds. Answer each question as quickly as you can.</p>
+          <button class="primary" id="start-comprehension" type="button" disabled>Review the five cues · 20s</button>
+        </div>
+
+        <div class="stage hidden" id="exposure-stage">
+          <div class="exposure-bar"><span id="observe-only">Look only — do not click</span><strong id="exposure-count">5</strong></div>
+          <div class="app-frame-wrap"><iframe id="snapshot-frame" title="GuitarFlow comprehension screen"></iframe></div>
+        </div>
+
+        <div class="stage hidden" id="question-stage">
+          <span class="eyebrow" id="recall-label">QUICK QUESTIONS</span>
+          <h2 id="question-title"></h2>
+          <p id="recall-help">Choose one answer. The timer has started.</p>
+          <div class="answer-grid" id="answer-grid"></div>
+          <div class="response-clock" id="response-clock">0.0s</div>
+        </div>
+
+        <div class="stage hidden" id="task-stage">
+          <span class="eyebrow" id="tasks-label">DO THESE WITHOUT HELP</span>
+          <div class="task-layout">
+            <div>
+              <h2 id="task-title"></h2>
+              <p id="task-instruction"></p>
+              <div class="task-status" id="task-status">Waiting for the participant…</div>
+              <div class="task-actions" id="task-actions"><button id="task-fail" type="button">Could not complete unassisted</button></div>
+            </div>
+            <div class="live-frame-wrap"><iframe id="live-frame" title="Interactive GuitarFlow task screen"></iframe></div>
+          </div>
+        </div>
+
+        <div class="stage hidden" id="review-stage">
+          <span class="eyebrow">EVALUATOR REVIEW</span>
+          <h2>Record observed severity</h2>
+          <label>Highest usability severity observed
+            <select id="severity">
+              <option value="">Select one</option>
+              <option value="none">No usability issue</option>
+              <option value="P2">P2 · Minor friction</option>
+              <option value="P1">P1 · Major confusion or failed core task</option>
+              <option value="P0">P0 · Unsafe, destructive, or completely blocking</option>
+            </select>
+          </label>
+          <label>Notes
+            <textarea id="session-notes" rows="5" placeholder="Hesitation, wrong action, confusion, or participant wording…"></textarea>
+          </label>
+          <button class="primary" id="save-session" type="button" disabled>Save anonymous session</button>
+        </div>
+
+        <div class="stage hidden" id="complete-stage">
+          <span class="eyebrow">SESSION SAVED</span>
+          <h2 id="complete-title">Participant recorded</h2>
+          <div class="session-result" id="session-result"></div>
+          <button class="primary" id="return-dashboard" type="button">Return to dashboard</button>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/usability-test.js"></script>
+  </body>
+</html>

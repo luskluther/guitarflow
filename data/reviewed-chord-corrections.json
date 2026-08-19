@@ -1,0 +1,10 @@
+{
+  "schema": "guitarflow-reviewed-chord-corrections-1",
+  "corrections": [
+    {
+      "timeSec": 14.11,
+      "chord": "C",
+      "reason": "Klangio held G across the audible C/Cadd9 change at 'fork stuck'; snapped to cached beat 3."
+    }
+  ]
+}

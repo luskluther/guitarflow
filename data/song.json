@@ -1,0 +1,2341 @@
+{
+  "analysis": {
+    "beatReport": {
+      "derivedCount": 48,
+      "providerCount": 45,
+      "repairs": [
+        {
+          "beat": 1,
+          "reason": "Restored a leading beat omitted by the provider window.",
+          "timeSec": 0.31
+        },
+        {
+          "beat": 4,
+          "reason": "Filled a provider-window beat gap for continuous metronome timing.",
+          "timeSec": 14.73
+        },
+        {
+          "beat": 4,
+          "reason": "Restored a trailing beat omitted by the provider window.",
+          "timeSec": 29.81
+        }
+      ]
+    },
+    "chordReport": {
+      "beginnerSimplification": true,
+      "corrections": [
+        {
+          "chord": "C",
+          "reason": "Klangio held G across the audible C/Cadd9 change at 'fork stuck'; snapped to cached beat 3.",
+          "timeSec": 14.11
+        }
+      ],
+      "coverageRatio": 0.9475,
+      "provider": "Klangio chord-recognition-extended",
+      "recognizedChords": [
+        "C",
+        "D",
+        "Em",
+        "G"
+      ],
+      "warning": "Chord qualities are provider-derived and simplified to deterministic beginner voicings; reviewed overrides are disclosed separately."
+    },
+    "lyricReport": {
+      "averageWordConfidence": 0.9012,
+      "coverageRatio": 0.6087,
+      "coverageSeconds": 18.26,
+      "coveredEndSec": 29.88,
+      "coveredStartSec": 11.62,
+      "wordCount": 39
+    },
+    "qualityGate": {
+      "audioAudit": "beat-synchronous guitar chroma",
+      "noteValidation": "not applicable to Chord Mode",
+      "publicationBlocked": false,
+      "rawProviderFindings": [
+        {
+          "candidateChord": "C",
+          "candidateRise": 0.2056,
+          "candidateScore": 0.6726,
+          "labelledChord": "G",
+          "labelledScore": 0.6758,
+          "reason": "Beat-synchronous guitar chroma changed without a nearby chord boundary.",
+          "timeSec": 14.11
+        }
+      ],
+      "status": "pass",
+      "structuralFindings": [],
+      "unresolvedFindingCount": 0,
+      "unresolvedFindings": []
+    },
+    "windows": [
+      {
+        "jobs": [
+          {
+            "endpoint": "beat-tracking",
+            "final_status": {
+              "status": "COMPLETED"
+            },
+            "job_id": "75a7a97a-3246-4cd2-a6c6-bbe975e89a26",
+            "name": "beat-tracking",
+            "outputs": [
+              "beat-tracking\\986021ae1260fcb150b53a26a54778ff510072edc52ab51b0d0e93f0065e495e\\result\\response.raw"
+            ],
+            "request_cache_key": "986021ae1260fcb150b53a26a54778ff510072edc52ab51b0d0e93f0065e495e"
+          },
+          {
+            "endpoint": "chord-recognition-extended",
+            "final_status": {
+              "status": "COMPLETED"
+            },
+            "job_id": "692a0b63-9316-4ee4-adde-17759b3819c8",
+            "name": "chord-recognition-extended",
+            "outputs": [
+              "chord-recognition-extended\\07e2d1973348c80b6a3a7584c6c4ef2c927cbd6631080f4b25fc2d79d9e728f1\\result\\response.raw"
+            ],
+            "request_cache_key": "07e2d1973348c80b6a3a7584c6c4ef2c927cbd6631080f4b25fc2d79d9e728f1"
+          },
+          {
+            "endpoint": "source-separation",
+            "final_status": {
+              "status": "COMPLETED"
+            },
+            "job_id": "150fb385-5d67-4e0f-9119-0e9b0b145f3c",
+            "name": "source-separation",
+            "outputs": [
+              "source-separation\\cf13130ed1ffe7db5981ae2468dcf71d37ab14740155b26f75a4defa8b63752d\\outputs\\stems\\vocals.wav",
+              "source-separation\\cf13130ed1ffe7db5981ae2468dcf71d37ab14740155b26f75a4defa8b63752d\\outputs\\stems\\bass.wav",
+              "source-separation\\cf13130ed1ffe7db5981ae2468dcf71d37ab14740155b26f75a4defa8b63752d\\outputs\\stems\\drums.wav",
+              "source-separation\\cf13130ed1ffe7db5981ae2468dcf71d37ab14740155b26f75a4defa8b63752d\\outputs\\stems\\piano.wav",
+              "source-separation\\cf13130ed1ffe7db5981ae2468dcf71d37ab14740155b26f75a4defa8b63752d\\outputs\\stems\\guitar.wav",
+              "source-separation\\cf13130ed1ffe7db5981ae2468dcf71d37ab14740155b26f75a4defa8b63752d\\outputs\\stems\\other.wav"
+            ],
+            "request_cache_key": "cf13130ed1ffe7db5981ae2468dcf71d37ab14740155b26f75a4defa8b63752d"
+          },
+          {
+            "endpoint": "transcription",
+            "final_status": {
+              "status": "COMPLETED"
+            },
+            "job_id": "4b5c1de7-b3f6-469f-9924-5916ab96e43c",
+            "name": "transcription",
+            "outputs": [
+              "transcription\\00e509e709aa9dc5bcb6bd77de9296d4d2edb8310ffea67784e6c826db24d732\\outputs\\transcription.mid"
+            ],
+            "request_cache_key": "00e509e709aa9dc5bcb6bd77de9296d4d2edb8310ffea67784e6c826db24d732"
+          }
+        ],
+        "offsetSec": 0.0,
+        "source": {
+          "duration_seconds": 30.0,
+          "filename": "spike-a-ui-30s.wav",
+          "sha256": "5a59b108414681f7519bae4d66e659744b6ae11a06d0c7e960bf407869c9acb0"
+        }
+      },
+      {
+        "jobs": [
+          {
+            "endpoint": "beat-tracking",
+            "final_status": {
+              "status": "COMPLETED"
+            },
+            "job_id": "562526ad-2494-4948-842c-117e2750e1bb",
+            "name": "beat-tracking",
+            "outputs": [
+              "beat-tracking\\640f1610747937b627a7b0fd640cd444208473753e621511176f7cc1500a6c7d\\result\\response.raw"
+            ],
+            "request_cache_key": "640f1610747937b627a7b0fd640cd444208473753e621511176f7cc1500a6c7d"
+          },
+          {
+            "endpoint": "chord-recognition-extended",
+            "final_status": {
+              "status": "COMPLETED"
+            },
+            "job_id": "4e09f13b-c544-4ad7-b6ea-0befd6a24154",
+            "name": "chord-recognition-extended",
+            "outputs": [
+              "chord-recognition-extended\\94ea50661b4bcdd3bbb28a5453e23bb9acc4bbea78ec9a2445854ca4dabfe865\\result\\response.raw"
+            ],
+            "request_cache_key": "94ea50661b4bcdd3bbb28a5453e23bb9acc4bbea78ec9a2445854ca4dabfe865"
+          },
+          {
+            "endpoint": "source-separation",
+            "final_status": {
+              "status": "COMPLETED"
+            },
+            "job_id": "05edebdd-6ee4-41fd-aecc-9d3212d8cbbf",
+            "name": "source-separation",
+            "outputs": [
+              "source-separation\\aff3ffc730d4bde3e0d9d63bf1f8c01b9068a752dcefa5af55cff5da84f54732\\outputs\\stems\\vocals.wav",
+              "source-separation\\aff3ffc730d4bde3e0d9d63bf1f8c01b9068a752dcefa5af55cff5da84f54732\\outputs\\stems\\bass.wav",
+              "source-separation\\aff3ffc730d4bde3e0d9d63bf1f8c01b9068a752dcefa5af55cff5da84f54732\\outputs\\stems\\drums.wav",
+              "source-separation\\aff3ffc730d4bde3e0d9d63bf1f8c01b9068a752dcefa5af55cff5da84f54732\\outputs\\stems\\piano.wav",
+              "source-separation\\aff3ffc730d4bde3e0d9d63bf1f8c01b9068a752dcefa5af55cff5da84f54732\\outputs\\stems\\guitar.wav",
+              "source-separation\\aff3ffc730d4bde3e0d9d63bf1f8c01b9068a752dcefa5af55cff5da84f54732\\outputs\\stems\\other.wav"
+            ],
+            "request_cache_key": "aff3ffc730d4bde3e0d9d63bf1f8c01b9068a752dcefa5af55cff5da84f54732"
+          },
+          {
+            "endpoint": "transcription",
+            "final_status": {
+              "status": "COMPLETED"
+            },
+            "job_id": "f8290e2b-047b-4c31-8bab-f079a43eb118",
+            "name": "transcription",
+            "outputs": [
+              "transcription\\7c1f6f4c0a158ef97b47b03d7f1886424817b701fa222d5da69ecb74f1ab3237\\outputs\\transcription.mid"
+            ],
+            "request_cache_key": "7c1f6f4c0a158ef97b47b03d7f1886424817b701fa222d5da69ecb74f1ab3237"
+          }
+        ],
+        "offsetSec": 15.0,
+        "source": {
+          "duration_seconds": 15.0,
+          "filename": "spike-a-ui-window-15s.wav",
+          "sha256": "b5e15367dbf10cf23d919f6dddfe50f2d5dc1b902d8ad7ebaa213aac9515ebca"
+        }
+      }
+    ]
+  },
+  "audio": {
+    "backingPath": "/fixtures/backing.wav",
+    "durationSec": 30.0,
+    "guitarPath": "/fixtures/guitar.wav",
+    "originalPath": "/fixtures/spike-a-ui-30s.wav",
+    "sourcePath": "frontend\\public\\fixtures\\spike-a-ui-30s.wav"
+  },
+  "beats": [
+    {
+      "beat": 1.0,
+      "derived": true,
+      "timeSec": 0.31
+    },
+    {
+      "beat": 2.0,
+      "timeSec": 0.94
+    },
+    {
+      "beat": 3.0,
+      "timeSec": 1.59
+    },
+    {
+      "beat": 4.0,
+      "timeSec": 2.21
+    },
+    {
+      "beat": 1.0,
+      "timeSec": 2.85
+    },
+    {
+      "beat": 2.0,
+      "timeSec": 3.47
+    },
+    {
+      "beat": 3.0,
+      "timeSec": 4.09
+    },
+    {
+      "beat": 4.0,
+      "timeSec": 4.7
+    },
+    {
+      "beat": 1.0,
+      "timeSec": 5.34
+    },
+    {
+      "beat": 2.0,
+      "timeSec": 5.96
+    },
+    {
+      "beat": 3.0,
+      "timeSec": 6.6
+    },
+    {
+      "beat": 4.0,
+      "timeSec": 7.22
+    },
+    {
+      "beat": 1.0,
+      "timeSec": 7.84
+    },
+    {
+      "beat": 2.0,
+      "timeSec": 8.47
+    },
+    {
+      "beat": 3.0,
+      "timeSec": 9.09
+    },
+    {
+      "beat": 4.0,
+      "timeSec": 9.72
+    },
+    {
+      "beat": 1.0,
+      "timeSec": 10.34
+    },
+    {
+      "beat": 2.0,
+      "timeSec": 10.95
+    },
+    {
+      "beat": 3.0,
+      "timeSec": 11.58
+    },
+    {
+      "beat": 4.0,
+      "timeSec": 12.22
+    },
+    {
+      "beat": 1.0,
+      "timeSec": 12.84
+    },
+    {
+      "beat": 2.0,
+      "timeSec": 13.5
+    },
+    {
+      "beat": 3.0,
+      "timeSec": 14.11
+    },
+    {
+      "beat": 4.0,
+      "derived": true,
+      "timeSec": 14.73
+    },
+    {
+      "beat": 1.0,
+      "timeSec": 15.35
+    },
+    {
+      "beat": 2.0,
+      "timeSec": 15.95
+    },
+    {
+      "beat": 3.0,
+      "timeSec": 16.61
+    },
+    {
+      "beat": 4.0,
+      "timeSec": 17.23
+    },
+    {
+      "beat": 1.0,
+      "timeSec": 17.86
+    },
+    {
+      "beat": 2.0,
+      "timeSec": 18.48
+    },
+    {
+      "beat": 3.0,
+      "timeSec": 19.11
+    },
+    {
+      "beat": 4.0,
+      "timeSec": 19.73
+    },
+    {
+      "beat": 1.0,
+      "timeSec": 20.36
+    },
+    {
+      "beat": 2.0,
+      "timeSec": 21.0
+    },
+    {
+      "beat": 3.0,
+      "timeSec": 21.63
+    },
+    {
+      "beat": 4.0,
+      "timeSec": 22.25
+    },
+    {
+      "beat": 1.0,
+      "timeSec": 22.91
+    },
+    {
+      "beat": 2.0,
+      "timeSec": 23.51
+    },
+    {
+      "beat": 3.0,
+      "timeSec": 24.16
+    },
+    {
+      "beat": 4.0,
+      "timeSec": 24.78
+    },
+    {
+      "beat": 1.0,
+      "timeSec": 25.41
+    },
+    {
+      "beat": 2.0,
+      "timeSec": 26.04
+    },
+    {
+      "beat": 3.0,
+      "timeSec": 26.67
+    },
+    {
+      "beat": 4.0,
+      "timeSec": 27.3
+    },
+    {
+      "beat": 1.0,
+      "timeSec": 27.93
+    },
+    {
+      "beat": 2.0,
+      "timeSec": 28.55
+    },
+    {
+      "beat": 3.0,
+      "timeSec": 29.18
+    },
+    {
+      "beat": 4.0,
+      "derived": true,
+      "timeSec": 29.81
+    }
+  ],
+  "chordEvents": [
+    {
+      "chord": "G",
+      "context": {
+        "current": "G",
+        "next": "C",
+        "nextChangeSec": 4.09,
+        "previous": null
+      },
+      "displayName": "G Major",
+      "endSec": 4.09,
+      "poseId": "G_OPEN",
+      "startSec": 1.574
+    },
+    {
+      "chord": "C",
+      "context": {
+        "current": "C",
+        "next": "D",
+        "nextChangeSec": 5.34,
+        "previous": "G"
+      },
+      "displayName": "C Major",
+      "endSec": 5.34,
+      "poseId": "C_OPEN",
+      "startSec": 4.09
+    },
+    {
+      "chord": "D",
+      "context": {
+        "current": "D",
+        "next": "G",
+        "nextChangeSec": 6.6,
+        "previous": "C"
+      },
+      "displayName": "D Major",
+      "endSec": 6.6,
+      "poseId": "D_OPEN",
+      "startSec": 5.34
+    },
+    {
+      "chord": "G",
+      "context": {
+        "current": "G",
+        "next": "C",
+        "nextChangeSec": 9.09,
+        "previous": "D"
+      },
+      "displayName": "G Major",
+      "endSec": 9.09,
+      "poseId": "G_OPEN",
+      "startSec": 6.6
+    },
+    {
+      "chord": "C",
+      "context": {
+        "current": "C",
+        "next": "G",
+        "nextChangeSec": 9.72,
+        "previous": "G"
+      },
+      "displayName": "C Major",
+      "endSec": 9.72,
+      "poseId": "C_OPEN",
+      "startSec": 9.09
+    },
+    {
+      "chord": "G",
+      "context": {
+        "current": "G",
+        "next": "D",
+        "nextChangeSec": 10.34,
+        "previous": "C"
+      },
+      "displayName": "G Major",
+      "endSec": 10.34,
+      "poseId": "G_OPEN",
+      "startSec": 9.72
+    },
+    {
+      "chord": "D",
+      "context": {
+        "current": "D",
+        "next": "G",
+        "nextChangeSec": 11.58,
+        "previous": "G"
+      },
+      "displayName": "D Major",
+      "endSec": 11.58,
+      "poseId": "D_OPEN",
+      "startSec": 10.34
+    },
+    {
+      "chord": "G",
+      "context": {
+        "current": "G",
+        "next": "C",
+        "nextChangeSec": 14.11,
+        "previous": "D"
+      },
+      "displayName": "G Major",
+      "endSec": 14.11,
+      "poseId": "G_OPEN",
+      "startSec": 11.58
+    },
+    {
+      "chord": "C",
+      "context": {
+        "current": "C",
+        "next": "D",
+        "nextChangeSec": 15.35,
+        "previous": "G"
+      },
+      "displayName": "C Major",
+      "endSec": 15.35,
+      "poseId": "C_OPEN",
+      "startSec": 14.11
+    },
+    {
+      "chord": "D",
+      "context": {
+        "current": "D",
+        "next": "G",
+        "nextChangeSec": 16.61,
+        "previous": "C"
+      },
+      "displayName": "D Major",
+      "endSec": 16.61,
+      "poseId": "D_OPEN",
+      "startSec": 15.35
+    },
+    {
+      "chord": "G",
+      "context": {
+        "current": "G",
+        "next": "C",
+        "nextChangeSec": 19.11,
+        "previous": "D"
+      },
+      "displayName": "G Major",
+      "endSec": 19.11,
+      "poseId": "G_OPEN",
+      "startSec": 16.61
+    },
+    {
+      "chord": "C",
+      "context": {
+        "current": "C",
+        "next": "D",
+        "nextChangeSec": 20.36,
+        "previous": "G"
+      },
+      "displayName": "C Major",
+      "endSec": 20.36,
+      "poseId": "C_OPEN",
+      "startSec": 19.11
+    },
+    {
+      "chord": "D",
+      "context": {
+        "current": "D",
+        "next": "Em",
+        "nextChangeSec": 21.63,
+        "previous": "C"
+      },
+      "displayName": "D Major",
+      "endSec": 21.63,
+      "poseId": "D_OPEN",
+      "startSec": 20.36
+    },
+    {
+      "chord": "Em",
+      "context": {
+        "current": "Em",
+        "next": "D",
+        "nextChangeSec": 22.91,
+        "previous": "D"
+      },
+      "displayName": "E Minor",
+      "endSec": 22.91,
+      "poseId": "EMinor_OPEN",
+      "startSec": 21.63
+    },
+    {
+      "chord": "D",
+      "context": {
+        "current": "D",
+        "next": "C",
+        "nextChangeSec": 24.16,
+        "previous": "Em"
+      },
+      "displayName": "D Major",
+      "endSec": 24.16,
+      "poseId": "D_OPEN",
+      "startSec": 22.91
+    },
+    {
+      "chord": "C",
+      "context": {
+        "current": "C",
+        "next": "G",
+        "nextChangeSec": 24.78,
+        "previous": "D"
+      },
+      "displayName": "C Major",
+      "endSec": 24.78,
+      "poseId": "C_OPEN",
+      "startSec": 24.16
+    },
+    {
+      "chord": "G",
+      "context": {
+        "current": "G",
+        "next": "Em",
+        "nextChangeSec": 26.67,
+        "previous": "C"
+      },
+      "displayName": "G Major",
+      "endSec": 26.67,
+      "poseId": "G_OPEN",
+      "startSec": 24.78
+    },
+    {
+      "chord": "Em",
+      "context": {
+        "current": "Em",
+        "next": "D",
+        "nextChangeSec": 27.93,
+        "previous": "G"
+      },
+      "displayName": "E Minor",
+      "endSec": 27.93,
+      "poseId": "EMinor_OPEN",
+      "startSec": 26.67
+    },
+    {
+      "chord": "D",
+      "context": {
+        "current": "D",
+        "next": "C",
+        "nextChangeSec": 29.18,
+        "previous": "Em"
+      },
+      "displayName": "D Major",
+      "endSec": 29.18,
+      "poseId": "D_OPEN",
+      "startSec": 27.93
+    },
+    {
+      "chord": "C",
+      "context": {
+        "current": "C",
+        "next": null,
+        "nextChangeSec": null,
+        "previous": "D"
+      },
+      "displayName": "C Major",
+      "endSec": 30.0,
+      "poseId": "C_OPEN",
+      "startSec": 29.18
+    }
+  ],
+  "lyrics": {
+    "language": "en",
+    "segments": [
+      {
+        "endSec": 15.96,
+        "id": 1,
+        "startSec": 11.62,
+        "text": "Another turning point, a fork stuck in the road",
+        "words": [
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "C",
+              "nextChangeSec": 14.11,
+              "previous": "D"
+            },
+            "confidence": 0.1731,
+            "endSec": 12.34,
+            "startSec": 11.62,
+            "text": "Another"
+          },
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "C",
+              "nextChangeSec": 14.11,
+              "previous": "D"
+            },
+            "confidence": 0.6621,
+            "endSec": 13.06,
+            "startSec": 12.34,
+            "text": "turning"
+          },
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "C",
+              "nextChangeSec": 14.11,
+              "previous": "D"
+            },
+            "confidence": 0.983,
+            "endSec": 13.64,
+            "startSec": 13.06,
+            "text": "point,"
+          },
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "C",
+              "nextChangeSec": 14.11,
+              "previous": "D"
+            },
+            "confidence": 0.8387,
+            "endSec": 13.9,
+            "startSec": 13.82,
+            "text": "a"
+          },
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "C",
+              "nextChangeSec": 14.11,
+              "previous": "D"
+            },
+            "confidence": 0.9931,
+            "endSec": 14.26,
+            "startSec": 13.9,
+            "text": "fork"
+          },
+          {
+            "chordContext": {
+              "current": "C",
+              "next": "D",
+              "nextChangeSec": 15.35,
+              "previous": "G"
+            },
+            "confidence": 0.9842,
+            "endSec": 14.5,
+            "startSec": 14.26,
+            "text": "stuck"
+          },
+          {
+            "chordContext": {
+              "current": "C",
+              "next": "D",
+              "nextChangeSec": 15.35,
+              "previous": "G"
+            },
+            "confidence": 0.9794,
+            "endSec": 14.82,
+            "startSec": 14.5,
+            "text": "in"
+          },
+          {
+            "chordContext": {
+              "current": "C",
+              "next": "D",
+              "nextChangeSec": 15.35,
+              "previous": "G"
+            },
+            "confidence": 0.9935,
+            "endSec": 15.1,
+            "startSec": 14.82,
+            "text": "the"
+          },
+          {
+            "chordContext": {
+              "current": "C",
+              "next": "D",
+              "nextChangeSec": 15.35,
+              "previous": "G"
+            },
+            "confidence": 0.9933,
+            "endSec": 15.96,
+            "startSec": 15.1,
+            "text": "road"
+          }
+        ]
+      },
+      {
+        "endSec": 21.16,
+        "id": 2,
+        "startSec": 16.74,
+        "text": "Time grabs you by the wrist, directs you where to go",
+        "words": [
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "C",
+              "nextChangeSec": 19.11,
+              "previous": "D"
+            },
+            "confidence": 0.7662,
+            "endSec": 17.1,
+            "startSec": 16.74,
+            "text": "Time"
+          },
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "C",
+              "nextChangeSec": 19.11,
+              "previous": "D"
+            },
+            "confidence": 0.907,
+            "endSec": 17.48,
+            "startSec": 17.1,
+            "text": "grabs"
+          },
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "C",
+              "nextChangeSec": 19.11,
+              "previous": "D"
+            },
+            "confidence": 0.9906,
+            "endSec": 17.7,
+            "startSec": 17.48,
+            "text": "you"
+          },
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "C",
+              "nextChangeSec": 19.11,
+              "previous": "D"
+            },
+            "confidence": 0.9876,
+            "endSec": 18.02,
+            "startSec": 17.7,
+            "text": "by"
+          },
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "C",
+              "nextChangeSec": 19.11,
+              "previous": "D"
+            },
+            "confidence": 0.9862,
+            "endSec": 18.28,
+            "startSec": 18.02,
+            "text": "the"
+          },
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "C",
+              "nextChangeSec": 19.11,
+              "previous": "D"
+            },
+            "confidence": 0.6796,
+            "endSec": 18.68,
+            "startSec": 18.28,
+            "text": "wrist,"
+          },
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "C",
+              "nextChangeSec": 19.11,
+              "previous": "D"
+            },
+            "confidence": 0.9849,
+            "endSec": 19.24,
+            "startSec": 18.78,
+            "text": "directs"
+          },
+          {
+            "chordContext": {
+              "current": "C",
+              "next": "D",
+              "nextChangeSec": 20.36,
+              "previous": "G"
+            },
+            "confidence": 0.9959,
+            "endSec": 19.54,
+            "startSec": 19.24,
+            "text": "you"
+          },
+          {
+            "chordContext": {
+              "current": "C",
+              "next": "D",
+              "nextChangeSec": 20.36,
+              "previous": "G"
+            },
+            "confidence": 0.9588,
+            "endSec": 19.76,
+            "startSec": 19.54,
+            "text": "where"
+          },
+          {
+            "chordContext": {
+              "current": "C",
+              "next": "D",
+              "nextChangeSec": 20.36,
+              "previous": "G"
+            },
+            "confidence": 0.9967,
+            "endSec": 20.18,
+            "startSec": 19.76,
+            "text": "to"
+          },
+          {
+            "chordContext": {
+              "current": "C",
+              "next": "D",
+              "nextChangeSec": 20.36,
+              "previous": "G"
+            },
+            "confidence": 0.9986,
+            "endSec": 21.16,
+            "startSec": 20.18,
+            "text": "go"
+          }
+        ]
+      },
+      {
+        "endSec": 26.02,
+        "id": 3,
+        "startSec": 21.76,
+        "text": "So make the best of this test and don't ask why",
+        "words": [
+          {
+            "chordContext": {
+              "current": "Em",
+              "next": "D",
+              "nextChangeSec": 22.91,
+              "previous": "D"
+            },
+            "confidence": 0.94,
+            "endSec": 22.12,
+            "startSec": 21.76,
+            "text": "So"
+          },
+          {
+            "chordContext": {
+              "current": "Em",
+              "next": "D",
+              "nextChangeSec": 22.91,
+              "previous": "D"
+            },
+            "confidence": 0.9554,
+            "endSec": 22.48,
+            "startSec": 22.12,
+            "text": "make"
+          },
+          {
+            "chordContext": {
+              "current": "Em",
+              "next": "D",
+              "nextChangeSec": 22.91,
+              "previous": "D"
+            },
+            "confidence": 0.9977,
+            "endSec": 22.7,
+            "startSec": 22.48,
+            "text": "the"
+          },
+          {
+            "chordContext": {
+              "current": "Em",
+              "next": "D",
+              "nextChangeSec": 22.91,
+              "previous": "D"
+            },
+            "confidence": 0.9984,
+            "endSec": 23.14,
+            "startSec": 22.7,
+            "text": "best"
+          },
+          {
+            "chordContext": {
+              "current": "D",
+              "next": "C",
+              "nextChangeSec": 24.16,
+              "previous": "Em"
+            },
+            "confidence": 0.9828,
+            "endSec": 23.6,
+            "startSec": 23.14,
+            "text": "of"
+          },
+          {
+            "chordContext": {
+              "current": "D",
+              "next": "C",
+              "nextChangeSec": 24.16,
+              "previous": "Em"
+            },
+            "confidence": 0.9871,
+            "endSec": 23.94,
+            "startSec": 23.6,
+            "text": "this"
+          },
+          {
+            "chordContext": {
+              "current": "D",
+              "next": "C",
+              "nextChangeSec": 24.16,
+              "previous": "Em"
+            },
+            "confidence": 0.6518,
+            "endSec": 24.38,
+            "startSec": 23.94,
+            "text": "test"
+          },
+          {
+            "chordContext": {
+              "current": "C",
+              "next": "G",
+              "nextChangeSec": 24.78,
+              "previous": "D"
+            },
+            "confidence": 0.4753,
+            "endSec": 24.6,
+            "startSec": 24.38,
+            "text": "and"
+          },
+          {
+            "chordContext": {
+              "current": "C",
+              "next": "G",
+              "nextChangeSec": 24.78,
+              "previous": "D"
+            },
+            "confidence": 0.9736,
+            "endSec": 24.92,
+            "startSec": 24.6,
+            "text": "don't"
+          },
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "Em",
+              "nextChangeSec": 26.67,
+              "previous": "C"
+            },
+            "confidence": 0.9978,
+            "endSec": 25.18,
+            "startSec": 24.92,
+            "text": "ask"
+          },
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "Em",
+              "nextChangeSec": 26.67,
+              "previous": "C"
+            },
+            "confidence": 0.9497,
+            "endSec": 26.02,
+            "startSec": 25.18,
+            "text": "why"
+          }
+        ]
+      },
+      {
+        "endSec": 29.88,
+        "id": 4,
+        "startSec": 26.02,
+        "text": "It's not a question, but a lesson learned",
+        "words": [
+          {
+            "chordContext": {
+              "current": "G",
+              "next": "Em",
+              "nextChangeSec": 26.67,
+              "previous": "C"
+            },
+            "confidence": 0.7568,
+            "endSec": 27.26,
+            "startSec": 26.02,
+            "text": "It's"
+          },
+          {
+            "chordContext": {
+              "current": "Em",
+              "next": "D",
+              "nextChangeSec": 27.93,
+              "previous": "G"
+            },
+            "confidence": 0.9902,
+            "endSec": 27.48,
+            "startSec": 27.26,
+            "text": "not"
+          },
+          {
+            "chordContext": {
+              "current": "Em",
+              "next": "D",
+              "nextChangeSec": 27.93,
+              "previous": "G"
+            },
+            "confidence": 0.991,
+            "endSec": 27.74,
+            "startSec": 27.48,
+            "text": "a"
+          },
+          {
+            "chordContext": {
+              "current": "Em",
+              "next": "D",
+              "nextChangeSec": 27.93,
+              "previous": "G"
+            },
+            "confidence": 0.9918,
+            "endSec": 28.24,
+            "startSec": 27.74,
+            "text": "question,"
+          },
+          {
+            "chordContext": {
+              "current": "D",
+              "next": "C",
+              "nextChangeSec": 29.18,
+              "previous": "Em"
+            },
+            "confidence": 0.9245,
+            "endSec": 28.7,
+            "startSec": 28.64,
+            "text": "but"
+          },
+          {
+            "chordContext": {
+              "current": "D",
+              "next": "C",
+              "nextChangeSec": 29.18,
+              "previous": "Em"
+            },
+            "confidence": 0.8983,
+            "endSec": 29.0,
+            "startSec": 28.7,
+            "text": "a"
+          },
+          {
+            "chordContext": {
+              "current": "D",
+              "next": "C",
+              "nextChangeSec": 29.18,
+              "previous": "Em"
+            },
+            "confidence": 0.9997,
+            "endSec": 29.46,
+            "startSec": 29.0,
+            "text": "lesson"
+          },
+          {
+            "chordContext": {
+              "current": "C",
+              "next": null,
+              "nextChangeSec": null,
+              "previous": "D"
+            },
+            "confidence": 0.8324,
+            "endSec": 29.88,
+            "startSec": 29.46,
+            "text": "learned"
+          }
+        ]
+      }
+    ],
+    "words": [
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "C",
+          "nextChangeSec": 14.11,
+          "previous": "D"
+        },
+        "confidence": 0.1731,
+        "endSec": 12.34,
+        "startSec": 11.62,
+        "text": "Another"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "C",
+          "nextChangeSec": 14.11,
+          "previous": "D"
+        },
+        "confidence": 0.6621,
+        "endSec": 13.06,
+        "startSec": 12.34,
+        "text": "turning"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "C",
+          "nextChangeSec": 14.11,
+          "previous": "D"
+        },
+        "confidence": 0.983,
+        "endSec": 13.64,
+        "startSec": 13.06,
+        "text": "point,"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "C",
+          "nextChangeSec": 14.11,
+          "previous": "D"
+        },
+        "confidence": 0.8387,
+        "endSec": 13.9,
+        "startSec": 13.82,
+        "text": "a"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "C",
+          "nextChangeSec": 14.11,
+          "previous": "D"
+        },
+        "confidence": 0.9931,
+        "endSec": 14.26,
+        "startSec": 13.9,
+        "text": "fork"
+      },
+      {
+        "chordContext": {
+          "current": "C",
+          "next": "D",
+          "nextChangeSec": 15.35,
+          "previous": "G"
+        },
+        "confidence": 0.9842,
+        "endSec": 14.5,
+        "startSec": 14.26,
+        "text": "stuck"
+      },
+      {
+        "chordContext": {
+          "current": "C",
+          "next": "D",
+          "nextChangeSec": 15.35,
+          "previous": "G"
+        },
+        "confidence": 0.9794,
+        "endSec": 14.82,
+        "startSec": 14.5,
+        "text": "in"
+      },
+      {
+        "chordContext": {
+          "current": "C",
+          "next": "D",
+          "nextChangeSec": 15.35,
+          "previous": "G"
+        },
+        "confidence": 0.9935,
+        "endSec": 15.1,
+        "startSec": 14.82,
+        "text": "the"
+      },
+      {
+        "chordContext": {
+          "current": "C",
+          "next": "D",
+          "nextChangeSec": 15.35,
+          "previous": "G"
+        },
+        "confidence": 0.9933,
+        "endSec": 15.96,
+        "startSec": 15.1,
+        "text": "road"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "C",
+          "nextChangeSec": 19.11,
+          "previous": "D"
+        },
+        "confidence": 0.7662,
+        "endSec": 17.1,
+        "startSec": 16.74,
+        "text": "Time"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "C",
+          "nextChangeSec": 19.11,
+          "previous": "D"
+        },
+        "confidence": 0.907,
+        "endSec": 17.48,
+        "startSec": 17.1,
+        "text": "grabs"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "C",
+          "nextChangeSec": 19.11,
+          "previous": "D"
+        },
+        "confidence": 0.9906,
+        "endSec": 17.7,
+        "startSec": 17.48,
+        "text": "you"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "C",
+          "nextChangeSec": 19.11,
+          "previous": "D"
+        },
+        "confidence": 0.9876,
+        "endSec": 18.02,
+        "startSec": 17.7,
+        "text": "by"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "C",
+          "nextChangeSec": 19.11,
+          "previous": "D"
+        },
+        "confidence": 0.9862,
+        "endSec": 18.28,
+        "startSec": 18.02,
+        "text": "the"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "C",
+          "nextChangeSec": 19.11,
+          "previous": "D"
+        },
+        "confidence": 0.6796,
+        "endSec": 18.68,
+        "startSec": 18.28,
+        "text": "wrist,"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "C",
+          "nextChangeSec": 19.11,
+          "previous": "D"
+        },
+        "confidence": 0.9849,
+        "endSec": 19.24,
+        "startSec": 18.78,
+        "text": "directs"
+      },
+      {
+        "chordContext": {
+          "current": "C",
+          "next": "D",
+          "nextChangeSec": 20.36,
+          "previous": "G"
+        },
+        "confidence": 0.9959,
+        "endSec": 19.54,
+        "startSec": 19.24,
+        "text": "you"
+      },
+      {
+        "chordContext": {
+          "current": "C",
+          "next": "D",
+          "nextChangeSec": 20.36,
+          "previous": "G"
+        },
+        "confidence": 0.9588,
+        "endSec": 19.76,
+        "startSec": 19.54,
+        "text": "where"
+      },
+      {
+        "chordContext": {
+          "current": "C",
+          "next": "D",
+          "nextChangeSec": 20.36,
+          "previous": "G"
+        },
+        "confidence": 0.9967,
+        "endSec": 20.18,
+        "startSec": 19.76,
+        "text": "to"
+      },
+      {
+        "chordContext": {
+          "current": "C",
+          "next": "D",
+          "nextChangeSec": 20.36,
+          "previous": "G"
+        },
+        "confidence": 0.9986,
+        "endSec": 21.16,
+        "startSec": 20.18,
+        "text": "go"
+      },
+      {
+        "chordContext": {
+          "current": "Em",
+          "next": "D",
+          "nextChangeSec": 22.91,
+          "previous": "D"
+        },
+        "confidence": 0.94,
+        "endSec": 22.12,
+        "startSec": 21.76,
+        "text": "So"
+      },
+      {
+        "chordContext": {
+          "current": "Em",
+          "next": "D",
+          "nextChangeSec": 22.91,
+          "previous": "D"
+        },
+        "confidence": 0.9554,
+        "endSec": 22.48,
+        "startSec": 22.12,
+        "text": "make"
+      },
+      {
+        "chordContext": {
+          "current": "Em",
+          "next": "D",
+          "nextChangeSec": 22.91,
+          "previous": "D"
+        },
+        "confidence": 0.9977,
+        "endSec": 22.7,
+        "startSec": 22.48,
+        "text": "the"
+      },
+      {
+        "chordContext": {
+          "current": "Em",
+          "next": "D",
+          "nextChangeSec": 22.91,
+          "previous": "D"
+        },
+        "confidence": 0.9984,
+        "endSec": 23.14,
+        "startSec": 22.7,
+        "text": "best"
+      },
+      {
+        "chordContext": {
+          "current": "D",
+          "next": "C",
+          "nextChangeSec": 24.16,
+          "previous": "Em"
+        },
+        "confidence": 0.9828,
+        "endSec": 23.6,
+        "startSec": 23.14,
+        "text": "of"
+      },
+      {
+        "chordContext": {
+          "current": "D",
+          "next": "C",
+          "nextChangeSec": 24.16,
+          "previous": "Em"
+        },
+        "confidence": 0.9871,
+        "endSec": 23.94,
+        "startSec": 23.6,
+        "text": "this"
+      },
+      {
+        "chordContext": {
+          "current": "D",
+          "next": "C",
+          "nextChangeSec": 24.16,
+          "previous": "Em"
+        },
+        "confidence": 0.6518,
+        "endSec": 24.38,
+        "startSec": 23.94,
+        "text": "test"
+      },
+      {
+        "chordContext": {
+          "current": "C",
+          "next": "G",
+          "nextChangeSec": 24.78,
+          "previous": "D"
+        },
+        "confidence": 0.4753,
+        "endSec": 24.6,
+        "startSec": 24.38,
+        "text": "and"
+      },
+      {
+        "chordContext": {
+          "current": "C",
+          "next": "G",
+          "nextChangeSec": 24.78,
+          "previous": "D"
+        },
+        "confidence": 0.9736,
+        "endSec": 24.92,
+        "startSec": 24.6,
+        "text": "don't"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "Em",
+          "nextChangeSec": 26.67,
+          "previous": "C"
+        },
+        "confidence": 0.9978,
+        "endSec": 25.18,
+        "startSec": 24.92,
+        "text": "ask"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "Em",
+          "nextChangeSec": 26.67,
+          "previous": "C"
+        },
+        "confidence": 0.9497,
+        "endSec": 26.02,
+        "startSec": 25.18,
+        "text": "why"
+      },
+      {
+        "chordContext": {
+          "current": "G",
+          "next": "Em",
+          "nextChangeSec": 26.67,
+          "previous": "C"
+        },
+        "confidence": 0.7568,
+        "endSec": 27.26,
+        "startSec": 26.02,
+        "text": "It's"
+      },
+      {
+        "chordContext": {
+          "current": "Em",
+          "next": "D",
+          "nextChangeSec": 27.93,
+          "previous": "G"
+        },
+        "confidence": 0.9902,
+        "endSec": 27.48,
+        "startSec": 27.26,
+        "text": "not"
+      },
+      {
+        "chordContext": {
+          "current": "Em",
+          "next": "D",
+          "nextChangeSec": 27.93,
+          "previous": "G"
+        },
+        "confidence": 0.991,
+        "endSec": 27.74,
+        "startSec": 27.48,
+        "text": "a"
+      },
+      {
+        "chordContext": {
+          "current": "Em",
+          "next": "D",
+          "nextChangeSec": 27.93,
+          "previous": "G"
+        },
+        "confidence": 0.9918,
+        "endSec": 28.24,
+        "startSec": 27.74,
+        "text": "question,"
+      },
+      {
+        "chordContext": {
+          "current": "D",
+          "next": "C",
+          "nextChangeSec": 29.18,
+          "previous": "Em"
+        },
+        "confidence": 0.9245,
+        "endSec": 28.7,
+        "startSec": 28.64,
+        "text": "but"
+      },
+      {
+        "chordContext": {
+          "current": "D",
+          "next": "C",
+          "nextChangeSec": 29.18,
+          "previous": "Em"
+        },
+        "confidence": 0.8983,
+        "endSec": 29.0,
+        "startSec": 28.7,
+        "text": "a"
+      },
+      {
+        "chordContext": {
+          "current": "D",
+          "next": "C",
+          "nextChangeSec": 29.18,
+          "previous": "Em"
+        },
+        "confidence": 0.9997,
+        "endSec": 29.46,
+        "startSec": 29.0,
+        "text": "lesson"
+      },
+      {
+        "chordContext": {
+          "current": "C",
+          "next": null,
+          "nextChangeSec": null,
+          "previous": "D"
+        },
+        "confidence": 0.8324,
+        "endSec": 29.88,
+        "startSec": 29.46,
+        "text": "learned"
+      }
+    ]
+  },
+  "metadata": {
+    "artist": "Green Day",
+    "capoFret": 0,
+    "difficulty": "Beginner",
+    "key": "G major",
+    "mode": "Chords",
+    "title": "Good Riddance (Time of Your Life)"
+  },
+  "phrases": [
+    {
+      "endSec": 16.41,
+      "id": "phrase-1",
+      "label": "Phrase 1",
+      "startSec": 11.17
+    },
+    {
+      "endSec": 21.61,
+      "id": "phrase-2",
+      "label": "Phrase 2",
+      "startSec": 16.29
+    },
+    {
+      "endSec": 26.47,
+      "id": "phrase-3",
+      "label": "Phrase 3",
+      "startSec": 21.31
+    },
+    {
+      "endSec": 30.0,
+      "id": "phrase-4",
+      "label": "Phrase 4",
+      "startSec": 25.57
+    }
+  ],
+  "schemaVersion": 1,
+  "strumEvents": [
+    {
+      "direction": "D",
+      "timeSec": 1.624
+    },
+    {
+      "direction": "D",
+      "timeSec": 1.944
+    },
+    {
+      "direction": "U",
+      "timeSec": 2.077
+    },
+    {
+      "direction": "U",
+      "timeSec": 2.394
+    },
+    {
+      "direction": "D",
+      "timeSec": 2.569
+    },
+    {
+      "direction": "U",
+      "timeSec": 2.727
+    },
+    {
+      "direction": "D",
+      "timeSec": 2.894
+    },
+    {
+      "direction": "D",
+      "timeSec": 3.183
+    },
+    {
+      "direction": "U",
+      "timeSec": 3.345
+    },
+    {
+      "direction": "U",
+      "timeSec": 3.651
+    },
+    {
+      "direction": "D",
+      "timeSec": 3.816
+    },
+    {
+      "direction": "U",
+      "timeSec": 3.962
+    },
+    {
+      "direction": "D",
+      "timeSec": 4.134
+    },
+    {
+      "direction": "D",
+      "timeSec": 4.445
+    },
+    {
+      "direction": "U",
+      "timeSec": 4.597
+    },
+    {
+      "direction": "U",
+      "timeSec": 4.894
+    },
+    {
+      "direction": "D",
+      "timeSec": 5.072
+    },
+    {
+      "direction": "U",
+      "timeSec": 5.228
+    },
+    {
+      "direction": "D",
+      "timeSec": 5.383
+    },
+    {
+      "direction": "D",
+      "timeSec": 5.683
+    },
+    {
+      "direction": "U",
+      "timeSec": 5.842
+    },
+    {
+      "direction": "D",
+      "timeSec": 6.023
+    },
+    {
+      "direction": "U",
+      "timeSec": 6.124
+    },
+    {
+      "direction": "D",
+      "timeSec": 6.303
+    },
+    {
+      "direction": "U",
+      "timeSec": 6.445
+    },
+    {
+      "direction": "D",
+      "timeSec": 6.635
+    },
+    {
+      "direction": "D",
+      "timeSec": 6.927
+    },
+    {
+      "direction": "U",
+      "timeSec": 7.077
+    },
+    {
+      "direction": "U",
+      "timeSec": 7.414
+    },
+    {
+      "direction": "D",
+      "timeSec": 7.575
+    },
+    {
+      "direction": "U",
+      "timeSec": 7.707
+    },
+    {
+      "direction": "D",
+      "timeSec": 7.876
+    },
+    {
+      "direction": "D",
+      "timeSec": 8.176
+    },
+    {
+      "direction": "U",
+      "timeSec": 8.344
+    },
+    {
+      "direction": "D",
+      "timeSec": 8.477
+    },
+    {
+      "direction": "U",
+      "timeSec": 8.651
+    },
+    {
+      "direction": "D",
+      "timeSec": 8.816
+    },
+    {
+      "direction": "U",
+      "timeSec": 8.944
+    },
+    {
+      "direction": "D",
+      "timeSec": 9.115
+    },
+    {
+      "direction": "D",
+      "timeSec": 9.404
+    },
+    {
+      "direction": "U",
+      "timeSec": 9.553
+    },
+    {
+      "direction": "D",
+      "timeSec": 9.715
+    },
+    {
+      "direction": "U",
+      "timeSec": 9.884
+    },
+    {
+      "direction": "D",
+      "timeSec": 10.046
+    },
+    {
+      "direction": "U",
+      "timeSec": 10.176
+    },
+    {
+      "direction": "D",
+      "timeSec": 10.355
+    },
+    {
+      "direction": "D",
+      "timeSec": 10.657
+    },
+    {
+      "direction": "U",
+      "timeSec": 10.815
+    },
+    {
+      "direction": "U",
+      "timeSec": 11.085
+    },
+    {
+      "direction": "D",
+      "timeSec": 11.279
+    },
+    {
+      "direction": "U",
+      "timeSec": 11.418
+    },
+    {
+      "direction": "D",
+      "timeSec": 11.588
+    },
+    {
+      "direction": "D",
+      "timeSec": 11.914
+    },
+    {
+      "direction": "U",
+      "timeSec": 12.057
+    },
+    {
+      "direction": "D",
+      "timeSec": 12.223
+    },
+    {
+      "direction": "D",
+      "timeSec": 12.421
+    },
+    {
+      "direction": "D",
+      "timeSec": 12.545
+    },
+    {
+      "direction": "D",
+      "timeSec": 12.705
+    },
+    {
+      "direction": "D",
+      "timeSec": 12.851
+    },
+    {
+      "direction": "D",
+      "timeSec": 13.067
+    },
+    {
+      "direction": "D",
+      "timeSec": 13.325
+    },
+    {
+      "direction": "D",
+      "timeSec": 13.509
+    },
+    {
+      "direction": "U",
+      "timeSec": 13.63
+    },
+    {
+      "direction": "D",
+      "timeSec": 13.632
+    },
+    {
+      "direction": "D",
+      "timeSec": 13.786
+    },
+    {
+      "direction": "D",
+      "timeSec": 13.932
+    },
+    {
+      "direction": "D",
+      "timeSec": 14.098
+    },
+    {
+      "direction": "U",
+      "timeSec": 14.211
+    },
+    {
+      "direction": "D",
+      "timeSec": 14.423
+    },
+    {
+      "direction": "D",
+      "timeSec": 14.577
+    },
+    {
+      "direction": "U",
+      "timeSec": 14.578
+    },
+    {
+      "direction": "D",
+      "timeSec": 14.883
+    },
+    {
+      "direction": "D",
+      "timeSec": 15.082
+    },
+    {
+      "direction": "U",
+      "timeSec": 15.175
+    },
+    {
+      "direction": "D",
+      "timeSec": 15.369
+    },
+    {
+      "direction": "D",
+      "timeSec": 15.677
+    },
+    {
+      "direction": "U",
+      "timeSec": 15.846
+    },
+    {
+      "direction": "U",
+      "timeSec": 16.166
+    },
+    {
+      "direction": "D",
+      "timeSec": 16.327
+    },
+    {
+      "direction": "U",
+      "timeSec": 16.465
+    },
+    {
+      "direction": "D",
+      "timeSec": 16.638
+    },
+    {
+      "direction": "D",
+      "timeSec": 16.975
+    },
+    {
+      "direction": "D",
+      "timeSec": 17.107
+    },
+    {
+      "direction": "U",
+      "timeSec": 17.277
+    },
+    {
+      "direction": "D",
+      "timeSec": 17.429
+    },
+    {
+      "direction": "U",
+      "timeSec": 17.579
+    },
+    {
+      "direction": "D",
+      "timeSec": 17.766
+    },
+    {
+      "direction": "U",
+      "timeSec": 17.925
+    },
+    {
+      "direction": "D",
+      "timeSec": 18.391
+    },
+    {
+      "direction": "U",
+      "timeSec": 18.633
+    },
+    {
+      "direction": "D",
+      "timeSec": 18.831
+    },
+    {
+      "direction": "U",
+      "timeSec": 18.997
+    },
+    {
+      "direction": "D",
+      "timeSec": 19.166
+    },
+    {
+      "direction": "D",
+      "timeSec": 19.478
+    },
+    {
+      "direction": "U",
+      "timeSec": 19.926
+    },
+    {
+      "direction": "D",
+      "timeSec": 20.093
+    },
+    {
+      "direction": "U",
+      "timeSec": 20.246
+    },
+    {
+      "direction": "D",
+      "timeSec": 20.391
+    },
+    {
+      "direction": "D",
+      "timeSec": 20.709
+    },
+    {
+      "direction": "U",
+      "timeSec": 20.887
+    },
+    {
+      "direction": "U",
+      "timeSec": 21.184
+    },
+    {
+      "direction": "D",
+      "timeSec": 21.345
+    },
+    {
+      "direction": "U",
+      "timeSec": 21.485
+    },
+    {
+      "direction": "D",
+      "timeSec": 21.666
+    },
+    {
+      "direction": "D",
+      "timeSec": 22.002
+    },
+    {
+      "direction": "U",
+      "timeSec": 22.124
+    },
+    {
+      "direction": "D",
+      "timeSec": 22.313
+    },
+    {
+      "direction": "U",
+      "timeSec": 22.433
+    },
+    {
+      "direction": "D",
+      "timeSec": 22.792
+    },
+    {
+      "direction": "U",
+      "timeSec": 22.915
+    },
+    {
+      "direction": "D",
+      "timeSec": 23.384
+    },
+    {
+      "direction": "D",
+      "timeSec": 23.578
+    },
+    {
+      "direction": "U",
+      "timeSec": 23.704
+    },
+    {
+      "direction": "D",
+      "timeSec": 23.894
+    },
+    {
+      "direction": "D",
+      "timeSec": 24.039
+    },
+    {
+      "direction": "D",
+      "timeSec": 24.206
+    },
+    {
+      "direction": "D",
+      "timeSec": 24.494
+    },
+    {
+      "direction": "D",
+      "timeSec": 24.817
+    },
+    {
+      "direction": "U",
+      "timeSec": 24.936
+    },
+    {
+      "direction": "D",
+      "timeSec": 25.144
+    },
+    {
+      "direction": "U",
+      "timeSec": 25.27
+    },
+    {
+      "direction": "D",
+      "timeSec": 25.47
+    },
+    {
+      "direction": "D",
+      "timeSec": 25.766
+    },
+    {
+      "direction": "U",
+      "timeSec": 25.927
+    },
+    {
+      "direction": "D",
+      "timeSec": 26.109
+    },
+    {
+      "direction": "U",
+      "timeSec": 26.213
+    },
+    {
+      "direction": "D",
+      "timeSec": 26.402
+    },
+    {
+      "direction": "U",
+      "timeSec": 26.546
+    },
+    {
+      "direction": "D",
+      "timeSec": 26.715
+    },
+    {
+      "direction": "D",
+      "timeSec": 27.007
+    },
+    {
+      "direction": "U",
+      "timeSec": 27.162
+    },
+    {
+      "direction": "D",
+      "timeSec": 27.326
+    },
+    {
+      "direction": "U",
+      "timeSec": 27.46
+    },
+    {
+      "direction": "D",
+      "timeSec": 27.79
+    },
+    {
+      "direction": "D",
+      "timeSec": 27.943
+    },
+    {
+      "direction": "D",
+      "timeSec": 28.145
+    },
+    {
+      "direction": "D",
+      "timeSec": 28.427
+    },
+    {
+      "direction": "D",
+      "timeSec": 28.722
+    },
+    {
+      "direction": "U",
+      "timeSec": 28.877
+    },
+    {
+      "direction": "D",
+      "timeSec": 29.014
+    },
+    {
+      "direction": "D",
+      "timeSec": 29.176
+    },
+    {
+      "direction": "D",
+      "timeSec": 29.485
+    },
+    {
+      "direction": "U",
+      "timeSec": 29.652
+    },
+    {
+      "direction": "D",
+      "timeSec": 29.655
+    },
+    {
+      "direction": "D",
+      "timeSec": 29.835
+    }
+  ],
+  "tempo": {
+    "beatUnit": 4,
+    "beatsPerBar": 4,
+    "bpm": 96.0
+  },
+  "voicings": {
+    "C": {
+      "displayName": "C Major",
+      "fingers": [
+        0,
+        1,
+        0,
+        2,
+        3,
+        0
+      ],
+      "frets": [
+        0,
+        1,
+        0,
+        2,
+        3,
+        null
+      ]
+    },
+    "D": {
+      "displayName": "D Major",
+      "fingers": [
+        2,
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "frets": [
+        2,
+        3,
+        2,
+        0,
+        null,
+        null
+      ]
+    },
+    "Em": {
+      "displayName": "E Minor",
+      "fingers": [
+        0,
+        0,
+        0,
+        3,
+        2,
+        0
+      ],
+      "frets": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        0
+      ]
+    },
+    "G": {
+      "displayName": "G Major",
+      "fingers": [
+        3,
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "frets": [
+        3,
+        0,
+        0,
+        0,
+        2,
+        3
+      ]
+    }
+  }
+}

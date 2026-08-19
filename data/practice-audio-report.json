@@ -1,0 +1,17 @@
+{
+  "backingOutput": "frontend\\public\\fixtures\\backing.wav",
+  "guitarOutput": "frontend\\public\\fixtures\\guitar.wav",
+  "sampleRate": 44100,
+  "channels": 2,
+  "durationSec": 30.0,
+  "windows": [
+    {
+      "offsetSec": 0.0,
+      "cacheRoot": "data\\cache\\klangio\\5a59b108414681f7519bae4d66e659744b6ae11a06d0c7e960bf407869c9acb0"
+    },
+    {
+      "offsetSec": 15.0,
+      "cacheRoot": "data\\cache\\klangio\\b5e15367dbf10cf23d919f6dddfe50f2d5dc1b902d8ad7ebaa213aac9515ebca"
+    }
+  ]
+}
